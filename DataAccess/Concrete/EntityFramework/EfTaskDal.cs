@@ -23,8 +23,8 @@ namespace DataAccess.Concrete.EntityFramework
                                  Description = t.Description,
                                  IsComplete = t.IsComplete,
                                  CategoryName = c.CategoryName,
-                                 StartDate = t.StartDate,
-                                 EndDate = t.EndDate
+                                 StartDate = t.StartDate.Value,
+                                 EndDate = t.EndDate.Value
                              };
                 return result.ToList();
             }
